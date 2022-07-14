@@ -1,0 +1,189 @@
+
+.graphic_more {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.graphic_more .graphic_left {
+    width: 30%;
+    margin-left: 200px;
+}
+
+.graphic_more .graphic_left .graphic_title {
+    font-size: 85px;
+    position: fixed;
+}
+
+.graphic_more .graphic_right {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-right: 200px;
+}
+
+.graphic_more .graphic_right > div:nth-child(2n) {
+    margin-top: 120px;
+}
+
+.graphic_more .graphic_right h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.graphic_more .graphic_right h3 {
+    margin-top: 10px;
+    font-family: 'ONE-Mobile-Regular';
+}
+
+.item5 {
+    margin-top: -600px;
+}
+
+.item7 {
+    margin-top: -300px;
+}
+
+.item3 {
+    margin-top: -100px;
+}
+
+.item9 {
+    margin-top: -100px;
+}
+
+/* 미디어쿼리========================================================== */
+
+/* 노트북: max-width:1600px */
+@media screen and (max-width:1600px){
+
+    .graphic_more .graphic_left {
+        margin-left: 100px;
+    }
+
+    .graphic_more .graphic_right {
+        margin-right: 100px;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+
+    .graphic_more .graphic_left {
+        margin-left: 50px;
+    }
+
+    .graphic_more .graphic_right {
+        margin-right: 50px;
+    }
+
+    .graphic_more .graphic_left .graphic_title {
+        font-size: 70px;
+    }
+
+
+}
+
+
+/*태블릿 : max-width:1024px,max-width:768px*/
+@media screen and (max-width:1024px){
+
+    .graphic_more .graphic_left .graphic_title {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .graphic_more {
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .graphic_more .graphic_left {
+        width: 690px;
+        height: 150px;
+        margin-left: 0;
+    }
+    
+    .graphic_more .graphic_left .graphic_title {
+        font-size: 60px;
+        position: absolute;
+        margin-left: 230px;
+    }
+    
+    .graphic_more .graphic_right {
+        width: 690px;
+        height: 70%;
+        margin-right: 0px;
+    }
+
+    .item4 {
+        margin-top: -90px;
+    }
+
+    .item5 {
+        margin-top: -450px;
+    }
+}
+
+
+/* 모바일: max-width:480px */
+@media screen and (max-width:480px){
+
+    .graphic_more .graphic_left .graphic_title {
+        font-size: 50px;
+        margin-left: 130px;
+    }
+
+    .graphic_more {
+        padding-top: 80px;
+    }
+
+    .graphic_more .graphic_left {
+        width: 450px;
+    }
+
+    .graphic_more .graphic_right {
+        width: 450px;
+    }
+
+    .graphic_more .graphic_right {
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+    .graphic_more .graphic_right > div:nth-child(2n) {
+        margin-top: 0px;
+    }
+
+    .graphic_more .graphic_right > div {
+        margin-bottom: 100px;
+        margin-top: 0;
+    }
+
+}
+
+/* 모바일: max-width: 414px */
+@media screen and (max-width:414px){
+
+    .graphic_more .graphic_left {
+        width: 380px;
+    }
+
+    header.active .logo:after {
+        display: none;
+    }
+
+    .graphic_more .graphic_left .graphic_title {
+        margin-left: 90px;
+    }
+
+}
